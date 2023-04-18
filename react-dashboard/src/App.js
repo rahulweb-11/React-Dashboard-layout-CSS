@@ -14,6 +14,7 @@ import { SpecialDays } from "./pages/SpecialDays";
 import { ApplyLeave } from "./pages/ApplyLeave";
 import { Payroll } from "./pages/Payroll";
 import { Paygrade } from "./pages/Paygrade";
+import { Tracker } from "./pages/Tracker";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" exact element={<Cards/>}/>
+        <Route path="/tracker" exact element={<Tracker/>}/>
         <Route path="/admin_man" exact element={<AdminManagement/>}/>
         <Route path="/company_mgt" exact element={<CompanyManagement/>}/>
         <Route path="/employee_mgt" exact element={<EmployeeManagement/>}/>

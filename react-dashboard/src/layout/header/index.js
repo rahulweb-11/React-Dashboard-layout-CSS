@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
-import avatar from '../../assets/images/avatar.svg';
-import './header.css';
-
+import React, { Component } from "react";
+import avatar from "../../assets/images/avatar.svg";
+import "./header.css";
 export default class Header extends Component {
 
   render() {
     return (
-        <nav className="navbar">
+      <nav className="navbar">
         <div className="nav_icon">
           <i className="fa fa-bars" aria-hidden="true"></i>
         </div>
         <div className="navbar__left">
-          <a className="active_link" href="#">Admin</a>
+          <a className="active_link" href="#">
+            Admin
+          </a>
         </div>
         <div className="navbar__right">
           <a href="#">
@@ -25,6 +26,6 @@ export default class Header extends Component {
           </a>
         </div>
       </nav>
-    )
+    );
   }
 }
